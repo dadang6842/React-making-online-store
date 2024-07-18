@@ -2,37 +2,33 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-bg {
+  height: 300px;
+  background-image: url('./bg.png');
+  background-size: cover; /* 요소를 모두 덮도록 너비, 높이 모두 확대 혹은 축소 */
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.alert {
+  background-color: yellow;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.start {
+  opacity: 0; /* 투명도 */
+}
+
+.end {
+  opacity: 1; /* 투명도 */
+  transition: opacity 1s; /* opacity 변경 시 0.5초에 걸쳐서 */
+}
+
+#search-button {
+  border-color: grey;
+  color: grey;
+}
+
+#search-button:hover {
+  background-color: grey;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
